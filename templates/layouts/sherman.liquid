@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html dir="ltr" lang="en-US" class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html dir="ltr" lang="en-US" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html dir="ltr" lang="en-US" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><html dir="ltr" lang="en-US" class="no-js ie"><![endif]-->
+<!--[if gt IE 8]><!--> <html dir="ltr" lang="en-US" class="no-js"><!--<![endif]-->
+
+<head>
+    <meta charset=utf-8>    
+    <title>{% block title %}Alvin Sherman Library, Research, and Information Technology Center{% endblock %}</title>
+    
+    <!-- Google Chrome Frame for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>             
+
+    <!-- Stylesheets (CSS)
+    ======================
+    --> {{ "reveal.min.css" | asset_url | stylesheet_tag }}
+        {{ "night.css" | asset_url | stylesheet_tag }}
+        {{ "your-project.css" | asset_url | stylesheet_tag }}  
+
+    <!-- Javascript
+    ======================
+    --> <script type="text/javascript" src="http://sherman.library.nova.edu/cdn/scripts/libs/modernizr.js"></script>
+
+    </head>
+    {% block bodyClass %}
+    <body>
+    {% endblock %}
+
+    <div class="reveal">
+        <div class="slides">
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+
+                
+
+    <!-- Javascript
+    ======================
+    --> {{ "reveal.min.js" | asset_url | script_tag }}
+        <script type="text/javascript">
+            Reveal.initialize({
+                loop: true,
+                mouseWheel: true,
+                progress: true,
+                transition: 'linear',
+                rollingLinks: false
+            });
+        </script>
+
+    
+    </body>
+</html>
