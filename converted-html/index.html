@@ -1,4 +1,54 @@
-{% block content %}
+<!DOCTYPE html>
+<!--[if lt IE 7]><html dir="ltr" lang="en-US" class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html dir="ltr" lang="en-US" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html dir="ltr" lang="en-US" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><html dir="ltr" lang="en-US" class="no-js ie"><![endif]-->
+<!--[if gt IE 8]><!--> <html dir="ltr" lang="en-US" class="no-js"><!--<![endif]-->
+
+<head>
+    <meta charset=utf-8>    
+    <title>Alvin Sherman Library, Research, and Information Technology Center</title>
+    
+    <!-- Google Chrome Frame for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>             
+
+    <link href="public/styles/reveal.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="public/styles/geek.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="public/styles/your-project.min.css" rel="stylesheet" type="text/css" media="all" />  
+
+    <!-- Javascript
+    ======================
+    --> <script type="text/javascript" src="http://sherman.library.nova.edu/cdn/scripts/libs/modernizr.js"></script>
+
+    </head>
+    
+    <body>
+    
+
+    <header class="header geek-font" role="banner">
+        <h1 class="geek-font">
+
+	Alvin<span>Sherman</span>Library
+
+	<small class="tagline">
+		<span>Meet</span> the <span>Geeks</span>
+	</small>
+
+</h1>
+
+<ul class="menu">
+	<a class="icon-library geek-font"> <span>sherman</span>library </a> /
+	<a class="icon-credit geek-font" href="http://www.nova.edu/library/main"> <span>library</span>card</a>
+</ul>
+    </header>
+
+    <div class="reveal">
+        <div class="slides">
+            
 
 <section data-state="geek--terry" id="terry">
 	<h2 class="h1 geek-font">
@@ -172,4 +222,27 @@
 		</h4>
 	</section>
 
-{% endblock %}
+
+        </div>
+    </div>
+
+                
+
+    <!-- Javascript
+    ======================
+    --> <script src="public/scripts/reveal.min.js"></script>
+        <script type="text/javascript">
+            Reveal.initialize({
+                loop: true,
+                mouseWheel: true,
+                progress: true,
+                transition: 'linear',
+                rollingLinks: false,
+                width: 1140
+
+            });
+        </script>
+
+    
+    </body>
+</html>
